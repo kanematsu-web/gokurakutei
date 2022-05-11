@@ -1,0 +1,92 @@
+.plan {
+    padding-top: 80px;
+    .inner {
+
+    }
+}
+
+.recommend {
+    padding-top: 60px;
+    .recommend-slick {
+
+    }
+    .recommend-item {
+        display: flex;
+        flex-flow: column-reverse;
+        border-radius: 8px;
+        overflow: hidden;
+        margin: 0 25px;
+        @include overTab {
+            margin: 0 10px;
+        }
+        .text {
+            background-color: cl(white);
+            padding: 15px 15px 50px 15px;
+            @include overTab {
+                padding: 25px 25px 50px 25px;
+            }
+            }
+        .title {
+            color: cl(text);
+        }
+        .price {
+            font-size: 14px;
+            padding-top: 66px;
+            > span {
+                color: cl(red);
+            }
+        }
+        .image {
+
+        }
+    }
+}
+
+.service {
+    .service-wrap {
+        margin-top: 80px;
+        @include overTab {
+            margin-top: 100px;
+        }
+    }
+    .service-list {
+        @include overTab {
+            display: flex;
+            padding: 0 40px;
+        }
+    }
+    .service-item {
+        background-color: rgba(255,255,255,0.9 );
+        display: flex;
+        flex-flow: column-reverse;
+        margin: 0 25px;
+        @include overTab {
+            width: percentage(390/1200);
+        }
+        +.service-item {
+            margin-top: 30px;
+            @include overTab {
+                margin-left: 20px;
+                margin-top: 0;
+            }
+        }
+        .text {
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 50px;
+        }
+        .title {
+            font-size: 28px;
+            text-align: center;
+        }
+        .desc {
+            font-size: 18px;
+            padding-top: 40px;
+        }
+        .image {
+            width: 160px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}

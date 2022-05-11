@@ -1,0 +1,91 @@
+.features {
+    padding-top: 80px;
+    .inner {
+        
+    }
+    .features-cont {
+        margin-top: 60px;
+    }
+    .features-list {
+
+    }
+    .featueres-item {
+        color: cl(baige);
+        display: flex;
+        flex-flow: column-reverse;
+        @include overTab {
+            display: flex;
+        }
+        &:nth-child(odd){
+            @include overTab {
+                flex-flow: row-reverse;
+            }
+            .image {
+                @include overTab {
+                    margin-right: 20px;
+                }
+            }
+            .text {
+                @include overTab {
+                    
+                }
+            }
+        }
+        &:nth-child(even) {
+            @include overTab {
+                flex-flow: row;
+            }
+            .image{
+                @include overTab {
+                    margin-left: 20px;
+                }
+            }
+            .text {
+                @include overTab {
+                    margin-left: 20px;
+                }
+            }
+        }
+        .text {
+            padding-left: 25px;
+            padding-right: 25px;
+            @include overTab {
+                flex: 1;
+                padding-top: 40px;
+            }
+        }
+        .title {
+            font-size: 18px;
+            padding-bottom: 50px;
+            @include overTab {
+                font-size: 28px;
+            }
+        }
+        .desc {
+            font-size: 16px;
+            padding-bottom: 60px;
+            @include overTab {
+                font-size: 18px;
+            }
+        }
+        .image {
+            width: 100%;
+            padding-bottom: 40px;
+            @include overTab {
+                width: percentage(640/1280);
+                padding-bottom: 0;
+            }
+            
+        }
+    }
+    .features-link {
+        
+        a {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @include overTab {
+            padding-bottom: 0;
+        }
+    }
+}

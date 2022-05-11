@@ -1,0 +1,39 @@
+.footer {
+    background-color: cl(primary);
+    border-top: solid 1px #6E6E6E;
+    .nav-wrap {
+    }
+    .nav-list {
+        text-align: center;
+        margin-top: 62px;
+        @include overTab {
+            display: flex;
+            padding-top: 60px;
+            justify-content: center;
+        }
+        .nav-item {
+            >a {
+                color: cl(white);
+            }
+            +.nav-item {
+                margin-top: 20px;
+                @include overTab {
+                    margin-left: 35px;
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    .footer-logo {
+        width: 188px;
+        padding-top: 60px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .copy-right {
+        color: cl(white);
+        padding-top: 20px;
+        text-align: center;
+        padding-bottom: 15px;
+    }
+}
